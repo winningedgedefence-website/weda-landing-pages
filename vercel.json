@@ -6,8 +6,58 @@
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/cds/:path*",
+      "destination": "https://thewinningedge.co.in/courses/cds",
+      "permanent": true
+    },
+    {
+      "source": "/rimc/:path*",
+      "destination": "https://thewinningedge.co.in/courses/rimc",
+      "permanent": true
+    },
+    {
+      "source": "/sainik-rms/:path*",
+      "destination": "https://thewinningedge.co.in/courses/sainik-rms",
+      "permanent": true
+    },
+    {
+      "source": "/ssc-gd/:path*",
+      "destination": "https://thewinningedge.co.in/courses/ssc-gd",
+      "permanent": true
+    },
+    {
+      "source": "/cds",
+      "destination": "https://thewinningedge.co.in/courses/cds",
+      "permanent": true
+    },
+    {
+      "source": "/rimc",
+      "destination": "https://thewinningedge.co.in/courses/rimc",
+      "permanent": true
+    },
+    {
+      "source": "/sainik-rms",
+      "destination": "https://thewinningedge.co.in/courses/sainik-rms",
+      "permanent": true
+    },
+    {
+      "source": "/ssc-gd",
+      "destination": "https://thewinningedge.co.in/courses/ssc-gd",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://thewinningedge.co.in/courses",
+      "permanent": true
     }
   ]
 }
